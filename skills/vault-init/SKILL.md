@@ -90,8 +90,10 @@ go-ahead. Then:
      (injects the project's scratch page at session start);
    - set `autoMemoryEnabled: false` — the scratch layer replaces auto-memory,
      and two memory surfaces drift apart.
-6. **Clean the template out:** remove the placeholder comment from INDEX.md
-   and any remaining template-only text, so lint runs clean.
+6. **Clean the template out:** remove the placeholder comment from INDEX.md,
+   and offer to delete the template-only files that make no sense in a
+   private vault — README.md, LICENSE, and `assets/` — so lint runs clean and
+   the vault holds only their own material.
 7. If they named a knowledge-pain item, draft that first page or rule now,
    with them reviewing.
 
