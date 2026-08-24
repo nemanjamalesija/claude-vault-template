@@ -55,7 +55,8 @@ for f in $(find $indexed_dirs -name "*.md" 2>/dev/null); do
   project=${f%%/*}
   [ "$project" = "me" ] && continue
   repo=$(repo_for "$project")
-  if [ -z "$repo" ] || [ ! -d "$repo" ]; then echo "  - $f: no repo mapping in projects.conf, retirement radar skipped"; continue; fi
+  if [ -z "$repo" ]; then echo "  - $f: no repo mapping in projects.conf, retirement radar skipped"; continue; fi
+  if [ ! -d "$repo" ]; then echo "  - $f: mapped repo $repo not found on this machine, retirement radar skipped"; continue; fi
   tickets=$(grep "^tickets:" "$f" | cut -d: -f2 | tr -d '[],')
   branches=$(grep "^branches:" "$f" | cut -d: -f2 | tr -d '[],')
   if [ -z "$(echo $tickets)" ] && [ -z "$(echo $branches)" ]; then echo "  - $f: no stable key, retirement is manual"; continue; fi
