@@ -25,6 +25,13 @@ Everything is plain markdown, so it opens in [Obsidian](https://obsidian.md)
 with working links and graph view. Obsidian is optional though. Any editor
 works.
 
+Before cloning anything, you can browse a lived-in example:
+[claude-vault-demo](https://github.com/nemanjamalesija/claude-vault-demo) is
+what a vault looks like after a couple of months on a real project. The
+project in it is fictional, the structure and the writing rules are exactly
+these. Start with its INDEX.md and compare a reference page against a
+work-state page, that contrast is the whole system.
+
 ## How it works
 
 The trick is that nothing is loaded blindly except two small files. Everything
@@ -64,13 +71,6 @@ The actual rulebook is [SCHEMA.md](SCHEMA.md). It defines what counts as junk,
 the page genres and what maintaining each one means, and when Claude writes
 without being asked. That file is the real product. Everything else in this
 repo exists to serve it.
-
-Before cloning anything, you can browse a lived-in example:
-[claude-vault-demo](https://github.com/nemanjamalesija/claude-vault-demo) is
-what a vault looks like after a couple of months on a real project. The
-project in it is fictional, the structure and the writing rules are exactly
-these. Start with its INDEX.md and compare a reference page against a
-work-state page, that contrast is the whole system.
 
 ## Setup
 
