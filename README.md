@@ -107,12 +107,16 @@ within a week.
   on it. Not vault-specific, but it earns its keep fast.
 - `hooks/vault-scratch.sh`, the session-start hook for scratch pages.
 
-And six skills. The two you'll actually live in:
+And six skills. The three you'll actually live in:
 
 - `/vault-init` — the setup interview.
 - `/work-state-vault` — tracks an ongoing effort. Snapshots it for the next
   session, and when the branch lands, proposes where every fact goes and
   cleans the page up.
+- `/re-prompt` — run it right before you clear the context. It checks the
+  whole session for anything the vault doesn't have yet, writes it down,
+  cleans up the scratch page, and then gives you a short prompt to paste into
+  the fresh session.
 
 The maintenance crew, run occasionally:
 
@@ -121,7 +125,6 @@ The maintenance crew, run occasionally:
 - `/audit-vault` — reviews the system itself rather than the pages: measures
   what every session pays for the always-loaded files, checks the setup
   against published guidance on agent memory, and proposes changes.
-- `/story-vault` — writes up shipped work for your own learning.
 
 ## How it fills up
 

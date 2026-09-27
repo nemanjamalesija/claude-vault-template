@@ -79,9 +79,8 @@ true.
    it goes to, or the delete bucket. **The default bucket is delete** — if no
    future session acts differently for having it, it goes, and that bucket
    should be the biggest. Ask in the same breath whether the owner wants a
-   story of this slice (`/story-vault`), since the session and the un-deleted
-   page are the sources it needs. Nothing is written or deleted before they
-   approve.
+   story of this slice, since the session and the un-deleted page are the
+   sources it needs. Nothing is written or deleted before they approve.
 4. **On approval, write the destinations first.** Verify each by re-reading
    the destination file, not by remembering having written it. Only then
    delete the slice's spec and its task-list line, and rewrite the spine's
